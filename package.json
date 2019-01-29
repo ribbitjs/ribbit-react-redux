@@ -1,0 +1,8 @@
+{
+  "name": "@ribbit/react-redux",
+  "version": "1.0.0",
+  "description": "Redux plugin for ribbit",
+  "main": "src/index.js",
+  "author": "Team Ribbit",
+  "license": "MIT"
+}
