@@ -2,7 +2,20 @@
   "name": "@ribbit/react-redux",
   "version": "1.0.0",
   "description": "Redux plugin for ribbit",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "author": "Team Ribbit",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "npx babel src --out-dir lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import-inspector": "^2.0.0"
+  }
 }
