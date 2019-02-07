@@ -1,13 +1,14 @@
 import { Provider } from "react-redux";
 const React = require("react");
 
-function wrapComponentInProvider(Component, { store }) {
+const wrapComponentInProvider = ({ App, config }) => {
+  const { store } = config;
   return (
     <Provider store={store}>
-      <Component />
+      <App />
     </Provider>
   );
-}
+};
 
 module.exports = {
   plugin: wrapComponentInProvider,
